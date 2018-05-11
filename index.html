@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplos de Scroll</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  
+  
+
+  <section class="parallax-1"></section>
+  
+  
+  <section class="parallax-2"
+    data-bottom="height: 0px;"
+    data-center="height: 600px;"
+    data-top="height: 200px;"
+  ></section>
+  
+  
+  <section class="parallax-3"
+    data-bottom="background-size:100%;"
+    data-top="background-size:200%;"
+  ></section>
+  
+  
+  <section class="parallax-4"
+    data-bottom="background-position:0%;"
+    data-top="background-position:100%;"
+  ></section>
+  
+  
+  <section class="contenedor-relative">
+  
+    <div class="cuadro1"
+      data-bottom="background:rgb(255,0,0); left: -20%; top:2%; transform:rotate(0deg);"
+      data-center="background:rgb(0,0,255); left:20%; top: 10%; transform:rotate(90deg); width:100px;"
+      data-top="background:rgb(0,255,0); left:0%; top: 80%; transform:rotate(180deg); width:200px;"
+    ></div>
+    
+    
+    <div class="cuadro1"
+      data-bottom="background:rgb(255,0,0); right: -20%; top:2%; transform:rotate(0deg);"
+      data-center="background:rgb(0,0,255); right:20%; top: 10%; transform:rotate(-90deg); width:100px;"
+      data-top="background:rgb(0,255,0); right:0%; top: 80%; transform:rotate(-180deg); width:200px;"
+    ></div>  
+  
+  </section>
+  
+  
+  
+  <section class="contenedor-relative">
+    <h1
+      data-bottom="margin-left: -100%;"
+      data-center="margin-left:0%"
+    >Título</h1>
+    <h2
+      data-bottom="margin-left: -100%;"
+      data-center="margin-left:0%"
+    >Subtítulo</h2>
+    <h3
+      data-bottom="margin-left: -100%;"
+      data-center="margin-left:0%"
+    >Texto</h3>
+    
+    <div class="imagen"
+      data-bottom="right:-100%;"
+      data-center="right:0%;"
+     >
+      <img src="https://source.unsplash.com/random/400x400">
+    </div>
+    
+  </section>
+  
+  
+  
+  
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+  
+  <script type="text/javascript">
+    var s = skrollr.init();
+  </script>
+  
+</body>
+</html>
